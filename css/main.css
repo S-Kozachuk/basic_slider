@@ -57,6 +57,7 @@ img {
   max-width: 1000px;
 }
 .slider-wrapper {
+  margin: 20px auto 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
