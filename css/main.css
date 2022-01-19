@@ -52,6 +52,18 @@ img {
   padding: 0 15px;
   width: 100%;
 }
+.slider {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .slider__dots {
   margin: 0 auto;
   margin-top: 20px;
