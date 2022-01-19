@@ -52,6 +52,13 @@ img {
   padding: 0 15px;
   width: 100%;
 }
+.slider__dots {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .slider__dot {
   margin-right: 10px;
   border: 2px solid #7c7a78;
