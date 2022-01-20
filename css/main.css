@@ -76,14 +76,11 @@ img {
   display: flex;
   width: 1000px;
   height: 110px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-transition: 1s ease-in;
   transition: 1s ease-in;
 }
 .slider__item {
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .slider__item:last-child {
   margin-right: 0;
