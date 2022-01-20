@@ -61,6 +61,12 @@ img {
   grid: auto / repeat(9, auto);
   justify-content: center;
 }
+.slider__item {
+  margin-right: 5px;
+}
+.slider__item:last-child {
+  margin-right: 0;
+}
 .slider__dots {
   margin: 0 auto;
   margin-top: 20px;
