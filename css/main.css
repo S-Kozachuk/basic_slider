@@ -67,8 +67,13 @@ img {
 .slider__item:last-child {
   margin-right: 0;
 }
-.slider__nav {
-  font-size: 20px;
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #b8b2b1;
+  font-size: 12px;
+  cursor: pointer;
 }
 .slider__dots {
   margin: 0 auto;
