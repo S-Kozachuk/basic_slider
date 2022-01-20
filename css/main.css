@@ -67,13 +67,13 @@ img {
 .slider__item:last-child {
   margin-right: 0;
 }
-.slider__nav {
+.slider-nav {
   display: grid;
   grid: auto / repeat(2, auto);
   justify-content: center;
   column-gap: 6px;
 }
-button {
+.slider-nav button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -81,12 +81,12 @@ button {
   font-size: 12px;
   cursor: pointer;
 }
-.slider__dots {
+.slider-dots {
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
 }
-.slider__dot {
+.slider-dot {
   margin-right: 10px;
   border: 2px solid #7c7a78;
   width: 15px;
@@ -94,7 +94,7 @@ button {
   border-radius: 50px;
   outline: none;
 }
-.slider__dot.active {
+.slider-dot.active {
   background-color: #f15730;
 }
 /*# sourceMappingURL=main.css.map */
