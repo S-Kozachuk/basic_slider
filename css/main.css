@@ -67,6 +67,9 @@ img {
 .slider__item:last-child {
   margin-right: 0;
 }
+.slider__nav {
+  font-size: 20px;
+}
 .slider__dots {
   margin: 0 auto;
   margin-top: 20px;
