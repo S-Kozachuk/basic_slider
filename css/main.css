@@ -1,11 +1,13 @@
 :root {
+  --h1: 'Oswald';
   --mainBg: #fff;
   --yellow: #ffff00e3;
   --red: #ff0000d7;
   --black: #000;
 }
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html {
   height: 100%;
@@ -16,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: var(--ProximaNova);
+  font-family: var(--h1);
   font-weight: 400;
   font-size: 18px;
   color: var(--text);
@@ -51,6 +53,12 @@ img {
   padding: 0 15px;
   width: 100%;
 }
+h1 {
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
 .slider {
   margin: 0 auto;
   max-width: 1000px;
@@ -59,7 +67,9 @@ img {
   margin: 20px auto 20px;
   display: grid;
   grid: auto / repeat(9, auto);
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .slider__item {
   margin-right: 5px;
@@ -70,8 +80,11 @@ img {
 .slider-nav {
   display: grid;
   grid: auto / repeat(2, auto);
-  justify-content: center;
-  column-gap: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 6px;
+          column-gap: 6px;
 }
 .slider-nav button {
   width: 40px;
@@ -86,8 +99,11 @@ img {
   margin-top: 20px;
   display: grid;
   grid: auto / repeat(3, auto);
-  justify-content: center;
-  column-gap: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
 }
 .slider-dot {
   border: 2px solid #7c7a78;
