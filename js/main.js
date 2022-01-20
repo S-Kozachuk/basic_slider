@@ -6,4 +6,15 @@ let offset = 0;
 function activ () {
 	btnL.className = "slider-prev";
 	btnR.className = "slider-next";
-}
+};
+
+btnL.addEventListener('click', () => {
+	btnL.className = "active";
+	offset -=105;
+	if (offset < 0){
+		offset=630;
+	}
+
+	slider.style.left = -offset + 'px';
+	setTimeout(activ, 400);
+});
