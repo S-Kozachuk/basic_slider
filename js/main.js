@@ -3,11 +3,14 @@ const btnR = document.getElementById('btnR');
 const slider = document.querySelector('.slider-wrapper');
 let offset = 0;
 
+// Added class for active button (if there is pushing)
+
 function activ () {
 	btnL.className = "slider-prev";
 	btnR.className = "slider-next";
 };
 
+// Расчёт премещения и условия для левой кнопки
 btnL.addEventListener('click', () => {
 	btnL.className = "active";
 	offset -= 105;
@@ -16,7 +19,7 @@ btnL.addEventListener('click', () => {
 	}
 
 	slider.style.left = -offset + 'px';
-	setTimeout(activ, 400);
+	setTimeout(activ, 500);
 });
 
 btnR.addEventListener('click', () => {
@@ -27,5 +30,5 @@ btnR.addEventListener('click', () => {
 	}
 
 	slider.style.left = -offset + 'px';
-	setTimeout(activ, 400);
+	setTimeout(activ, 500);
 });

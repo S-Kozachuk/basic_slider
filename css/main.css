@@ -76,8 +76,8 @@ img {
   display: flex;
   width: 1000px;
   height: 110px;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 .slider__item {
   margin-right: 15px;
