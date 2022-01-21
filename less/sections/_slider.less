@@ -8,21 +8,13 @@
 
 .slider-wrapper {
     position: relative;
-    left: 0;
-    display: flex;
-    //grid: auto / repeat(9, auto);
+    display: grid;
+    grid: auto / repeat(9, auto);
     width: 1000px;
-    height: 110px;
-    //justify-content: center;
+    height: 90px;
+    justify-content: left;
+	column-gap: 15px;
     transition: .5s ease-in;
-}
-
-.slider__item {
-    margin-right: 15px;
-
-    &:last-child {
-        margin-right: 0;
-    }
 }
 
 .slider-nav {
