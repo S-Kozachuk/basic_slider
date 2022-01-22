@@ -18,6 +18,7 @@ btnL.addEventListener('click', () => {
 		offset = 630;
 	}
 
+	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
 	setTimeout(activ, 500);
 });
