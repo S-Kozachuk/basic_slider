@@ -12,7 +12,7 @@ function activ () {
 
 // Расчёт премещения и условия для левой кнопки
 btnL.addEventListener('click', () => {
-	btnL.className = "active";
+	btnL.classList.add('active');
 	offset -= 105;
 	if (offset < 0){
 		offset = 630;
@@ -24,7 +24,7 @@ btnL.addEventListener('click', () => {
 });
 
 btnR.addEventListener('click', () => {
-	btnR.className = "active";
+	btnR.classList = "active";
 	offset += 105;
 	if (offset > 630){
 		offset = 0;

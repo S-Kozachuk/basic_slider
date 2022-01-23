@@ -91,6 +91,9 @@ img {
   font-size: 12px;
   cursor: pointer;
 }
+.slider-nav button.active {
+  background-color: #d13c21;
+}
 .slider-dots {
   margin: 0 auto;
   margin-top: 20px;
