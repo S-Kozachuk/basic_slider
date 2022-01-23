@@ -1,6 +1,6 @@
 const btnL = document.getElementById('btnL');
 const btnR = document.getElementById('btnR');
-const slider = document.querySelector('.slider-wrapper');
+const slider = document.querySelector('.slider');
 let offset = 0;
 
 // Added class for active button (if there is pushing)
