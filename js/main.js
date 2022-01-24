@@ -16,7 +16,7 @@ btnL.addEventListener('click', () => {
 	offset -= 105;
 	if (offset < 0){
 		offset = 630;
-	}
+	};
 
 	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
@@ -28,7 +28,7 @@ btnR.addEventListener('click', () => {
 	offset += 105;
 	if (offset > 630){
 		offset = 0;
-	}
+	};
 
 	slider.style.left = -offset + 'px';
 	setTimeout(activ, 500);
