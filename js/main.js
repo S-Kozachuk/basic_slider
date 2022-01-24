@@ -12,11 +12,12 @@ function activ () {
 
 // Расчёт премещения и условия для левой кнопки
 btnL.addEventListener('click', () => {
-	btnL.classList.add('active');
+	btnL.classList.contains('active');
 	offset -= 105;
 	if (offset < 0){
 		offset = 630;
 	};
+	console.log(slider);
 
 	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
