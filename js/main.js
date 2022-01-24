@@ -24,7 +24,7 @@ btnL.addEventListener('click', () => {
 });
 
 btnR.addEventListener('click', () => {
-	btnR.classList = "active";
+	btnR.classList.add('active');
 	offset += 105;
 	if (offset > 630){
 		offset = 0;
