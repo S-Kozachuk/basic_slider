@@ -19,7 +19,8 @@ btnL.addEventListener('click', () => {
 
 	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
-	setTimeout(activ, 500);
+	// Запуск функции activ с задержкой 400 мс
+	setTimeout(activ, 400);
 });
 
 btnR.addEventListener('click', () => {
@@ -30,5 +31,5 @@ btnR.addEventListener('click', () => {
 	};
 
 	slider.style.left = -offset + 'px';
-	setTimeout(activ, 500);
+	setTimeout(activ, 400);
 });
