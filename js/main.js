@@ -4,7 +4,6 @@ const slider = document.querySelector('.slider');
 let offset = 0;
 
 // Added class for active button (if there is pushing)
-
 function activ () {
 	btnL.className = "slider-prev";
 	btnR.className = "slider-next";
