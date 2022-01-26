@@ -9,9 +9,10 @@ function activ () {
 	btnR.className = "slider-next";
 };
 
-// Расчёт премещения и условия для левой кнопки
+// Условия перемещение слайдера по клику на левую кнопку
 btnL.addEventListener('click', () => {
 	btnL.classList.add('active');
+	// величина смещения вправо (ширина изобр.+отступы)
 	offset -= 105;
 	if (offset < 0){
 		offset = 630;
