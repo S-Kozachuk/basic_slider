@@ -5,8 +5,8 @@ let offset = 0;
 
 // Added class for active button (if there is pushing)
 function activ () {
-	btnL.className = "slider-prev";
-	btnR.className = "slider-next";
+	btnL.classList.remove('active');
+	btnR.classList.remove('active');
 };
 
 // Условия перемещение слайдера по клику на левую кнопку
