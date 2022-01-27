@@ -3,7 +3,13 @@ const btnR = document.getElementById('btnR');
 const slider = document.querySelector('.slider');
 let offset = 0;
 
-// Added class for active button (if there is pushing)
+// Removed .active classes to run by setTimeout (if there is pushing)
+/*
+После клика по кнопке (btnL), к ней добавляется класс active 
+(см. 20ст.), меняющий её цвет (делает кнопку активной). 
+Затем класс active удаляется после некоторой задержки 
+(в данном случае 400 мс), указанной в методе setTimeout.
+*/
 function activ () {
 	btnL.classList.remove('active');
 	btnR.classList.remove('active');
@@ -20,7 +26,7 @@ btnL.addEventListener('click', () => {
 
 	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
-	// Запуск функции activ с задержкой 400 мс
+	// Передача фцнкции activ с задержкой 400 мс
 	setTimeout(activ, 400);
 });
 
