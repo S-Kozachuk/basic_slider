@@ -34,3 +34,8 @@ btnR.addEventListener('click', () => {
 	slider.style.left = -offset + 'px';
 	setTimeout(activ, 400);
 });
+
+/*
+let collections = document.querySelectorAll('.slider__item');
+console.log(collections);
+*/
