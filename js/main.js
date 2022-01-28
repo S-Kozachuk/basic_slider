@@ -12,11 +12,12 @@ let offset = 0;
 После некоторой задержки (в данном случае 400 мс),
 функция removeActive удаляет класс active у соответстаующей кнопки.
 */
+/*
 function removeActive () {
 	btnL.classList.remove('active');
 	btnR.classList.remove('active');
 };
-
+*/
 // Условия перемещение слайдера по клику на левую кнопку
 btnL.addEventListener('click', () => {
 	btnL.classList.add('active');
@@ -29,7 +30,11 @@ btnL.addEventListener('click', () => {
 	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
 	// Передача фцнкции activ с задержкой 400 мс
-	setTimeout(removeActive, 400);
+	//setTimeout(removeActive, 400);
+	// Прямой запуск функции из метода
+	setTimeout(function() 
+	{btnL.classList.remove('active');},
+	400);
 });
 
 btnR.addEventListener('click', () => {
@@ -40,7 +45,10 @@ btnR.addEventListener('click', () => {
 	};
 
 	slider.style.left = -offset + 'px';
-	setTimeout(removeActive, 400);
+	//setTimeout(removeActive, 400);
+	setTimeout(function() 
+	{btnR.classList.remove('active');},
+	400);
 });
 
 /*
