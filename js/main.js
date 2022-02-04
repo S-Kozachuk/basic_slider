@@ -60,3 +60,17 @@ btnR.addEventListener('click', () => {
 let collections = document.querySelectorAll('.slider__item');
 console.log(collections);
 */
+// 
+dotL.addEventListener('click',() =>{
+	dotL.classList.add('active');
+	offset -= 210;
+	if (offset < 0){
+		offset = 630;
+	};
+	slider.style.left = -offset + 'px';
+	/*
+	setTimeout(function() 
+	{dotL.classList.remove('active');},
+	400);
+	*/
+});
