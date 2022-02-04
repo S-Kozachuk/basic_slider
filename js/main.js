@@ -3,6 +3,7 @@ const btnL = document.getElementById('btnL');
 const btnR = document.getElementById('btnR');
 const slider = document.querySelector('.slider');
 let offset = 0;
+// Variables for dot buttons (pagination)
 
 // Removed .active classes to run by setTimeout (if there is pushing)
 /*
