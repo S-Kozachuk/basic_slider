@@ -60,7 +60,7 @@ btnR.addEventListener('click', () => {
 let collections = document.querySelectorAll('.slider__item');
 console.log(collections);
 */
-// 
+// Left pagination handler
 dotL.addEventListener('click',() =>{
 	dotL.classList.add('active');
 	offset -= 210;
@@ -74,3 +74,8 @@ dotL.addEventListener('click',() =>{
 	400);
 	*/
 });
+
+/*
+const sliderDotC = querySelectorAll('slider-do');
+console.log(sliderDotC[2]);
+*/
