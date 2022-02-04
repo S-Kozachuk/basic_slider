@@ -4,6 +4,9 @@ const btnR = document.getElementById('btnR');
 const slider = document.querySelector('.slider');
 let offset = 0;
 // Variables for dot buttons (pagination)
+const dotL = document.getElementById('dotL');
+const dotC = document.getElementById('dotC');
+const dotR = document.getElementById('dotR');
 
 // Removed .active classes to run by setTimeout (if there is pushing)
 /*
