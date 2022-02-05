@@ -72,7 +72,7 @@ console.log(dotBtnC);
 const dotBtnR = document.querySelectorAll('.slider-dot')[2];
 console.log(dotBtnR);
 
-
+// Remove class active to slider-dot buttons
 function rmDotActive() {
 	dotBtnC.classList.remove('active');
 };
