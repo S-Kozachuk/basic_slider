@@ -73,30 +73,44 @@ const dotBtnR = document.querySelectorAll('.slider-dot')[2];
 console.log(dotBtnR);
 
 // Remove class active to slider-dot buttons
-function rmDotActive() {
+function rmDotL() {
+	dotBtnL.classList.remove('active');
+};
+
+function rmDotC() {;
+	dotBtnC.classList.remove('active');
+};
+
+function rmDotR() {
+	dotBtnL.classList.remove('active');
 	dotBtnC.classList.remove('active');
 };
 
 // Left pagination handler
 dotBtnL.addEventListener('click',() =>{
 	dotBtnL.classList.add('active');
-	offset -= 210;
+	offset -= 315;
 	if (offset < 0){
 		offset = 0;
 	};
 	slider.style.left = -offset + 'px';
-	setTimeout(rmDotActive, 200);	
+	setTimeout(rmDotC, 200);	
 });
 
 // Center pagination handler
-dotBtnL.addEventListener('click',() =>{
-	dotBtnL.classList.add('active');
-	offset -= 210;
-	if (offset < 0){
-		offset = 0;
-	};
+dotBtnC.addEventListener('click',() =>{
+	dotBtnC.classList.add('active');
+	offset = 315;
 	slider.style.left = -offset + 'px';
-	setTimeout(rmDotActive, 200);	
+	setTimeout(rmDotL, 200);	
+});
+
+// Right pagination handler
+dotBtnR.addEventListener('click',() =>{
+	dotBtnR.classList.add('active');
+	offset = 630;
+	slider.style.left = -offset + 'px';
+	setTimeout(rmDotC, 200);	
 });
 
 
