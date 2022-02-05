@@ -8,6 +8,11 @@ const dotL = document.getElementById('dotL');
 const dotC = document.getElementById('dotC');
 const dotR = document.getElementById('dotR');
 
+// Added class active to first dot button with delay
+
+let iniDotL = () => dotL.classList.add('active');
+setTimeout(iniDotL, 1000); 
+
 // Removed .active classes to run by setTimeout (if there is pushing)
 /*
 После клика по кнопке (btnL/btnR), к ней добавляется класс active 

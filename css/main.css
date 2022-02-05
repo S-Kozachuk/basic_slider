@@ -102,7 +102,7 @@ img {
   justify-content: center;
   column-gap: 8px;
 }
-.slider-dot {
+.slider-dots button {
   border: 2px solid #7c7a78;
   width: 15px;
   height: 15px;
@@ -110,7 +110,7 @@ img {
   outline: none;
   cursor: pointer;
 }
-.slider-dot.active {
+.slider-dots button.active {
   background-color: #f15730;
 }
 /*# sourceMappingURL=main.css.map */
