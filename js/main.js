@@ -16,13 +16,19 @@ const dotR = document.getElementById('dotR');
 Который в свою очердь ативирует с задержкой функцию removeActive. 
 После некоторой задержки (в данном случае 400 мс),
 функция removeActive удаляет класс active у соответстаующей кнопки.
+Синтаксис прямого запуска функции внутри метода setTimeout(плохая практика):
+setTimeout(function() 
+	{btnR.classList.remove('active');},
+	400);
+Грамотнее при задержке вызова функции ссылаться на её имя.
 */
-/*
-function removeActive () {
+
+// Removed class .active with run setTimeot metod
+function removeActive() {
 	btnL.classList.remove('active');
 	btnR.classList.remove('active');
 };
-*/
+
 // Условия перемещение слайдера по клику на левую кнопку
 btnL.addEventListener('click', () => {
 	btnL.classList.add('active');
@@ -34,12 +40,8 @@ btnL.addEventListener('click', () => {
 
 	// Исполнительная функция (перемещение)
 	slider.style.left = -offset + 'px';
-	// Передача фцнкции activ с задержкой 400 мс
-	//setTimeout(removeActive, 400);
-	// Прямой запуск функции из метода
-	setTimeout(function() 
-	{btnL.classList.remove('active');},
-	400);
+	// Запуск функции removeActive с задержкой 400 мс
+	setTimeout(removeActive, 400);
 });
 
 btnR.addEventListener('click', () => {
@@ -56,26 +58,35 @@ btnR.addEventListener('click', () => {
 	400);
 });
 
-/*
-let collections = document.querySelectorAll('.slider__item');
-console.log(collections);
-*/
+
+// DOTS BUTTON
+// Get buttons to collection 
+// Get left dot button to const dotBtnL
+const dotBtnL = document.querySelectorAll('.slider-dot')[0];
+console.log(dotBtnL);
+
+// Get centr dot button to const dotBtnC
+const dotBtnC = document.querySelectorAll('.slider-dot')[1];
+console.log(dotBtnC);
+
+// Get right dot button to const dotBtnR
+const dotBtnR = document.querySelectorAll('.slider-dot')[2];
+console.log(dotBtnR);
+
+
 // Left pagination handler
-dotL.addEventListener('click',() =>{
-	dotL.classList.add('active');
+dotBtnL.addEventListener('click',() =>{
+	dotBtnL.classList.add('active');
 	offset -= 210;
 	if (offset < 0){
 		offset = 630;
 	};
 	slider.style.left = -offset + 'px';
-	/*
+	
 	setTimeout(function() 
-	{dotL.classList.remove('active');},
-	400);
-	*/
+	{dotBtnC.classList.remove('active')},
+	200);	
 });
 
-/*
-const sliderDotC = querySelectorAll('slider-do');
-console.log(sliderDotC[2]);
-*/
+
+
