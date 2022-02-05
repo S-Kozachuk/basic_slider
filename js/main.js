@@ -82,7 +82,18 @@ dotBtnL.addEventListener('click',() =>{
 	dotBtnL.classList.add('active');
 	offset -= 210;
 	if (offset < 0){
-		offset = 630;
+		offset = 0;
+	};
+	slider.style.left = -offset + 'px';
+	setTimeout(rmDotActive, 200);	
+});
+
+// Center pagination handler
+dotBtnL.addEventListener('click',() =>{
+	dotBtnL.classList.add('active');
+	offset -= 210;
+	if (offset < 0){
+		offset = 0;
 	};
 	slider.style.left = -offset + 'px';
 	setTimeout(rmDotActive, 200);	
