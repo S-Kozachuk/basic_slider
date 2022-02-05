@@ -54,10 +54,7 @@ btnR.addEventListener('click', () => {
 	};
 
 	slider.style.left = -offset + 'px';
-	//setTimeout(removeActive, 400);
-	setTimeout(function() 
-	{btnR.classList.remove('active');},
-	400);
+	setTimeout(removeActive, 400);
 });
 
 
