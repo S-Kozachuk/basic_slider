@@ -59,36 +59,37 @@ btnR.addEventListener('click', () => {
 
 
 // DOTS BUTTON
-// Get buttons to collection 
+
+// Get buttons to collection by classes
 // Get left dot button to const dotBtnL
-const dotBtnL = document.querySelectorAll('.slider-dot')[0];
-console.log(dotBtnL);
+//const dotBtnL = document.querySelectorAll('.slider-dot')[0];
+//console.log(dotBtnL);
 
 // Get centr dot button to const dotBtnC
-const dotBtnC = document.querySelectorAll('.slider-dot')[1];
-console.log(dotBtnC);
+//const dotBtnC = document.querySelectorAll('.slider-dot')[1];
+//console.log(dotBtnC);
 
 // Get right dot button to const dotBtnR
-const dotBtnR = document.querySelectorAll('.slider-dot')[2];
-console.log(dotBtnR);
+//const dotBtnR = document.querySelectorAll('.slider-dot')[2];
+//console.log(dotBtnR);
 
 // Remove class active to slider-dot buttons
 function rmDotL() {
-	dotBtnL.classList.remove('active');
+	dotL.classList.remove('active');
 };
 
 function rmDotC() {;
-	dotBtnC.classList.remove('active');
+	dotC.classList.remove('active');
 };
 
 function rmDotR() {
-	dotBtnL.classList.remove('active');
-	dotBtnC.classList.remove('active');
+	dotL.classList.remove('active');
+	dotC.classList.remove('active');
 };
 
 // Left pagination handler
-dotBtnL.addEventListener('click',() =>{
-	dotBtnL.classList.add('active');
+dotL.addEventListener('click',() =>{
+	dotL.classList.add('active');
 	offset -= 315;
 	if (offset < 0){
 		offset = 0;
@@ -98,16 +99,16 @@ dotBtnL.addEventListener('click',() =>{
 });
 
 // Center pagination handler
-dotBtnC.addEventListener('click',() =>{
-	dotBtnC.classList.add('active');
+dotC.addEventListener('click',() =>{
+	dotC.classList.add('active');
 	offset = 315;
 	slider.style.left = -offset + 'px';
 	setTimeout(rmDotL, 200);	
 });
 
 // Right pagination handler
-dotBtnR.addEventListener('click',() =>{
-	dotBtnR.classList.add('active');
+dotR.addEventListener('click',() =>{
+	dotR.classList.add('active');
 	offset = 630;
 	slider.style.left = -offset + 'px';
 	setTimeout(rmDotC, 200);
