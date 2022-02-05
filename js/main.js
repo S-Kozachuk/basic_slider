@@ -29,6 +29,7 @@ function removeActive() {
 	btnR.classList.remove('active');
 };
 
+// Left button
 // Условия перемещение слайдера по клику на левую кнопку
 btnL.addEventListener('click', () => {
 	btnL.classList.add('active');
@@ -44,6 +45,7 @@ btnL.addEventListener('click', () => {
 	setTimeout(removeActive, 400);
 });
 
+// Right button
 btnR.addEventListener('click', () => {
 	btnR.classList.add('active');
 	offset += 105;
