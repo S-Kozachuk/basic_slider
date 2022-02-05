@@ -73,6 +73,10 @@ const dotBtnR = document.querySelectorAll('.slider-dot')[2];
 console.log(dotBtnR);
 
 
+function rmDotActive() {
+	dotBtnC.classList.remove('active');
+};
+
 // Left pagination handler
 dotBtnL.addEventListener('click',() =>{
 	dotBtnL.classList.add('active');
@@ -81,10 +85,7 @@ dotBtnL.addEventListener('click',() =>{
 		offset = 630;
 	};
 	slider.style.left = -offset + 'px';
-	
-	setTimeout(function() 
-	{dotBtnC.classList.remove('active')},
-	200);	
+	setTimeout(rmDotActive, 200);	
 });
 
 
