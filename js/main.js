@@ -9,7 +9,6 @@ const dotC = document.getElementById('dotC');
 const dotR = document.getElementById('dotR');
 
 // Added class active to first dot button with delay
-
 let iniDotL = () => dotL.classList.add('active');
 setTimeout(iniDotL, 1000); 
 
