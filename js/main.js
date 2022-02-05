@@ -110,7 +110,8 @@ dotBtnR.addEventListener('click',() =>{
 	dotBtnR.classList.add('active');
 	offset = 630;
 	slider.style.left = -offset + 'px';
-	setTimeout(rmDotC, 200);	
+	setTimeout(rmDotC, 200);
+	setTimeout(rmDotL, 200)	
 });
 
 
